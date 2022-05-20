@@ -9,8 +9,21 @@ class RincianFakultas extends StatelessWidget {
         title: const Text('Rincian Fakultas'),
       ),
       body: Center(
-        child: Text("rincian fakultas"),
-      ),
+          child: Column(
+              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+            Container(
+                padding: const EdgeInsets.all(10),
+                child: Image.network(
+                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
+                  width: 70,
+                )),
+            Column(children: const [
+              Text("FPMIPA"),
+              Text(
+                  "FPMIPA merupakan salah satu fakultas yang terdapat di Universitas Pendidikan Indonesia")
+            ]),
+          ])),
     );
   }
 }
